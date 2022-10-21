@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .store {
+            width: 400px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            height: 360px;
+            margin-top: 2%;
+            vertical-align: middle;
+        }
+
+        img {
+            height: 180px;
+            width: 400px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: small;
+        }
+
+        #display {
+            display: flex;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body onload="getData()">
+    <div id="display"></div>
+</body>
+<script src="./script/load.js"></script>
+
+</html>

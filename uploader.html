@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Data</title>
+    <style>
+        textarea {
+            resize: none;
+            border-radius: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-bottom: -0.65%;
+            padding-left: 5px;
+        }
+
+        .main {
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://sheetdb.io/api/v1/rqdrbx6lcpktk" id="sheetdb-form">
+        <div class="main">
+            <p>Product Name: <textarea name="data[p_name]" id="p_name" cols="30" rows="1"
+                    placeholder="Enter Text Here"></textarea></p>
+            <p>Product Description: <textarea name="data[p_description]" id="p_description" cols="30" rows="1"
+                    placeholder="Enter Text Here"></textarea></p>
+            <p>Product Image: <textarea name="data[p_img]" id="p_img" cols="30" rows="1"
+                    placeholder="Enter Text Here"></textarea></p>
+            <p><button type="submit">Submit</button></p>
+            <div id="verified"></div>
+        </div>
+        <script src="./script/submit.js"></script>
+
+    </form>
+
+
+</body>
+
+</html>
