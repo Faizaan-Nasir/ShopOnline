@@ -1,0 +1,29 @@
+.store {
+    width: 400px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    height: 360px;
+    margin-top: 2%;
+    vertical-align: middle;
+}
+
+img {
+    height: 180px;
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: small;
+}
+
+#display {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
