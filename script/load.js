@@ -6,7 +6,13 @@ async function getData() {
         div = document.createElement("div");
         div.id = `display${i}`
         div.style.margin = "20px"
-        document.getElementById("display").appendChild(div);
-        document.getElementById(`display${i}`).innerHTML = `<div class="store"><img src="${data[i]['p_img']}"><h2>${data[i]['p_name']}</h2>${data[i]['p_description']}</div>`
+        if (`${data[i]['p_cat']}` == "Fastners") {
+            document.getElementById("Fastners").appendChild(div);
+            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3><div class="description">${data[i]['p_description']}</div></div>`
+        }
+        else if (`${data[i]['p_cat']}` == "Paints") {
+            document.getElementById("Paints").appendChild(div);
+            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3><div class="description">${data[i]['p_description']}</div></div>`
+        }
     }
 }
