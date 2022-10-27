@@ -102,6 +102,7 @@ nav {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 3%;
+    font-style: none;
 }
 
 .shop {
@@ -130,4 +131,76 @@ nav {
 
 .spc-img {
     border-radius: 100px;
+}
+
+.content {
+    font-family: 'Raleway';
+    font-size: 24px;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: 400;
+}
+
+.contact {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.contact-img {
+    width: 360px;
+    height: 264px;
+    margin-left: 8%;
+    border-radius: 10px;
+}
+
+.contact-subdiv {
+    width: 60%;
+}
+
+footer {
+    background-color: #393939;
+}
+
+.footer-home {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: 400;
+    color: white;
+    width: 250px;
+    padding-top: 5%;
+}
+
+.footer-about {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: 400;
+    color: white;
+    width: 250px;
+}
+
+.footer-contact {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: 400;
+    color: white;
+    width: 250px;
+}
+
+.footer-address {
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: 400;
+    color: white;
+    width: 270px;
+    padding-bottom: 5%;
 }
