@@ -1,28 +1,28 @@
 .store {
-    width: 250px;
+    width: 200px;
     border-radius: 10px;
-    height: 275px;
+    height: 235px;
     vertical-align: middle;
 }
 
 img {
-    height: 250px;
-    width: 250px;
-    border-radius: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 21px;
 }
 
 h3 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 h2 {
     font-family: 'Raleway';
-    font-size: 28px;
+    font-size: 22px;
     padding-left: 10%;
-    margin-top: 3.5%;
+    padding-top: 1%;
     font-weight: bolder;
 }
 
@@ -43,6 +43,7 @@ h2 {
 
 body {
     background: #E3E3EB;
+    margin: 0px;
 }
 
 nav {
@@ -108,4 +109,16 @@ nav {
     width: 20px;
     cursor: pointer;
     border-radius: 0px;
+}
+
+.all-products {
+    background: #CECED7;
+}
+
+.subheading {
+    font-family: 'Raleway';
+    font-size: 30px;
+    padding-left: 8%;
+    padding-top: 3.5%;
+    font-weight: bolder;
 }

@@ -8,19 +8,19 @@ async function getData() {
     for (i = 0; i < data.length; i++) {
         div = document.createElement("div");
         div.id = `display${i}`
-        div.style.marginLeft = "2.5%"
-        div.style.marginRight = "2.5%"
-        if (`${data[i]['p_cat']}` == "Fastners" && a < 4) {
+        div.style.marginLeft = "2%"
+        div.style.marginRight = "2%"
+        if (`${data[i]['p_cat']}` == "Fastners" && a < 5) {
             document.getElementById("Fastners").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             a = a + 1
         }
-        else if (`${data[i]['p_cat']}` == "Paints" && b < 4) {
+        else if (`${data[i]['p_cat']}` == "Paints" && b < 5) {
             document.getElementById("Paints").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             b = b + 1
         }
-        else if (`${data[i]['p_cat']}` == "Electrical" && c < 4) {
+        else if (`${data[i]['p_cat']}` == "Electrical" && c < 5) {
             document.getElementById("Electrical").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             c = c + 1
