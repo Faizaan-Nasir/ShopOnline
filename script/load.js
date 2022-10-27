@@ -14,5 +14,9 @@ async function getData() {
             document.getElementById("Paints").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3><div class="description">${data[i]['p_description']}</div></div>`
         }
+        else if (`${data[i]['p_cat']}` == "Electrical") {
+            document.getElementById("Electrical").appendChild(div);
+            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3><div class="description">${data[i]['p_description']}</div></div>`
+        }
     }
 }
