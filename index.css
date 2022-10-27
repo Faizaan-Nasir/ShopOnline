@@ -204,3 +204,20 @@ footer {
     width: 270px;
     padding-bottom: 2.5%;
 }
+
+main {
+    display: none;
+}
+
+#loader {
+    display: block;
+    margin-top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.loader {
+    border-radius: 0px;
+    width: 100px;
+    height: 100px;
+}
