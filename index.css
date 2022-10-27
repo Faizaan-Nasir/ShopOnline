@@ -119,11 +119,15 @@ nav {
     font-family: 'Raleway';
     font-size: 30px;
     padding-left: 8%;
-    padding-top: 3.5%;
+    padding-top: 1%;
     font-weight: bolder;
     padding-bottom: 2%;
 }
 
 .latest-img {
     border-radius: 45px;
+}
+
+.spc-img {
+    border-radius: 100px;
 }

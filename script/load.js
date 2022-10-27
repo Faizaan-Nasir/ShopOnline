@@ -41,4 +41,18 @@ async function getData() {
             d = d + 1
         }
     }
+    e = 0
+    for (k = data.length - 1; k >= 0; k--) {
+        div = document.createElement("div");
+        div.id = `display${k}`
+        div.style.marginLeft = "2%"
+        div.style.marginRight = "2%"
+        div.style.marginBottom = "4%"
+        if (data[k]['p_spc'] == "yes" && e < 5) {
+            document.getElementById("Top-Picks").appendChild(div);
+            document.getElementById(`display${k}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[k]['p_img']}" class="spc-img"><h3>${data[k]['p_name']}</h3> </div>`
+            e = e + 1
+        }
+    }
+
 }
