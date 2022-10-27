@@ -15,14 +15,14 @@ h3 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
     font-family: 'Raleway';
     font-size: 22px;
     padding-left: 10%;
-    font-weight: bolder;
+    font-weight: 800;
     margin-top: 0px;
 }
 
@@ -120,7 +120,7 @@ nav {
     font-size: 30px;
     padding-left: 8%;
     padding-top: 1%;
-    font-weight: bolder;
+    font-weight: 700;
     padding-bottom: 2%;
 }
 
