@@ -10,6 +10,8 @@ async function getData() {
         div.id = `display${i}`
         div.style.marginLeft = "2%"
         div.style.marginRight = "2%"
+        div.style.marginBottom = "2%"
+        div.style.marginTop = "1%"
         if (`${data[i]['p_cat']}` == "Fastners" && a < 5) {
             document.getElementById("Fastners").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
@@ -24,6 +26,19 @@ async function getData() {
             document.getElementById("Electrical").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             c = c + 1
+        }
+    }
+    var d = 0
+    for (j = data.length - 1; j >= 0; j--) {
+        div = document.createElement("div");
+        div.id = `display${j}`
+        div.style.marginLeft = "2%"
+        div.style.marginRight = "2%"
+        div.style.marginBottom = "4%"
+        if (d < 5) {
+            document.getElementById("Latest").appendChild(div);
+            document.getElementById(`display${j}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[j]['p_img']}" class="latest-img"><h3>${data[j]['p_name']}</h3> </div>`
+            d = d + 1
         }
     }
 }
