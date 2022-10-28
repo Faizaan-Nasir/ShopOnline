@@ -10,7 +10,7 @@ async function getData() {
         main.style.display = "block"
     }
     else {
-        alert("The server took very long to respond. Please contact the store owner.")
+        alert("The sserver threw an error. Contact the store owner immediately.")
     }
     var a = 0
     var b = 0
