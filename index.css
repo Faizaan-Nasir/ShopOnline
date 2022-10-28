@@ -20,8 +20,8 @@ h3 {
 
 h2 {
     font-family: 'Raleway', 'Verdana', sans-serif;
-    font-size: 22px;
-    padding-left: 10%;
+    font-size: 24px;
+    padding-left: 3.5em;
     font-weight: 800;
     margin-top: 0px;
 }
@@ -132,8 +132,14 @@ nav {
     font-weight: 900;
     font-size: 30px;
     padding-left: 2.5em;
-    padding-top: 1%;
+    padding-top: 0.5em;
     padding-bottom: 2%;
+}
+
+#about-us-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .latest-img {
@@ -144,12 +150,13 @@ nav {
     border-radius: 100px;
 }
 
-.content {
+.about-content {
     font-family: 'Raleway', 'Verdana', sans-serif;
     font-size: 24px;
-    padding-left: 10%;
-    padding-top: 1%;
+    padding-left: 4em;
+    margin-top: 1em;
     font-weight: 400;
+    width: 700px;
 }
 
 .contact {
@@ -184,7 +191,7 @@ footer {
 
 .footer-links-1 {
     font-family: 'Poppins', 'Verdana', sans-serif;
-    font-size: 0.6666666666666667em;
+    font-size: 0.53333334em;
     margin-top: 1em;
     font-weight: 400;
     font-style: italic;
@@ -193,7 +200,7 @@ footer {
 
 .footer-links-2 {
     font-family: 'Poppins', 'Verdana', sans-serif;
-    font-size: 0.6666666666666667em;
+    font-size: 0.53333334em;
     margin-top: 1em;
     font-weight: 400;
     font-style: italic;
