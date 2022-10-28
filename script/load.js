@@ -3,6 +3,15 @@ const api_url = "https://sheetdb.io/api/v1/6lmkthf76fddi"
 async function getData() {
     const response = await fetch(api_url)
     const data = await response.json()
+    if (data.length >= 0) {
+        const main = document.getElementById("main")
+        const loader = document.getElementById("loader")
+        loader.style.display = "none"
+        main.style.display = "block"
+    }
+    else {
+        alert("The server took very long to respond. Please contact the store owner.")
+    }
     var a = 0
     var b = 0
     var c = 0
@@ -17,7 +26,6 @@ async function getData() {
             document.getElementById("Fastners").appendChild(div);
             document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             a = a + 1
-            StopFunction()
         }
         else if (`${data[i]['p_cat']}` == "Paints" && b < 5) {
             document.getElementById("Paints").appendChild(div);
@@ -56,20 +64,4 @@ async function getData() {
             e = e + 1
         }
     }
-    if (data.length >= 0) {
-        const main = document.getElementById("main")
-        const loader = document.getElementById("loader")
-        loader.style.display = "none"
-        main.style.display = "block"
-    }
-}
-
-const myTimeout = setTimeout(error, 2000);
-
-function error() {
-    alert("A server error occurred, contact the store owner immediately.")
-}
-
-function StopFunction() {
-    clearTimeout(myTimeout);
 }
