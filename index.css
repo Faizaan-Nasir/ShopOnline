@@ -242,28 +242,31 @@ main {
 
 /* trying slideshow #1 */
 .slideshow {
-    height: 650px;
-    width: 1300px;
-    background: url('./src/sample1.png');
+    height: 30em;
+    width: 90%;
+    background-image: url('./src/sample1.png');
     animation-name: slideshow;
     animation-duration: 30s;
     animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @keyframes slideshow {
     0% {
-        background: url('./src/sample1.png')
+        background-image: url('./src/sample1.png')
     }
 
     33.33% {
-        background: url('./src/sample2.png')
+        background-image: url('./src/sample2.png')
     }
 
     66.66% {
-        background: url('./src/sample3.png');
+        background-image: url('./src/sample3.png');
     }
 
     100% {
-        background: url('./src/sample1.png');
+        background-image: url('./src/sample1.png');
     }
 }
