@@ -12,18 +12,26 @@ img {
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Verdana', sans-serif;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
 }
 
 h2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Verdana', sans-serif;
     font-size: 22px;
     padding-left: 10%;
     font-weight: 800;
     margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline 1px #fff;
 }
 
 .display {
@@ -36,7 +44,7 @@ h2 {
 }
 
 .description {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', 'Verdana', sans-serif;
     padding-left: 10px;
     font-size: 16px;
 }
@@ -44,12 +52,14 @@ h2 {
 body {
     background: #E3E3EB;
     margin: 0px;
+    font-size: 24px;
 }
 
 nav {
     display: flex;
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Verdana', sans-serif;
     font-size: 20px;
+    font-weight: 400;
     height: 100px;
     vertical-align: middle;
 }
@@ -58,7 +68,6 @@ nav {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 5%;
-    font-weight: 700;
     cursor: pointer;
 }
 
@@ -81,7 +90,7 @@ nav {
     padding-bottom: 7px;
     padding-left: 10px;
     font-size: 16px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Verdana', sans-serif;
     border-radius: 4px;
 }
 
@@ -113,15 +122,17 @@ nav {
 }
 
 .all-products {
+    margin-top: 1em;
     background: #CECED7;
+    padding: 1.5em 0em;
 }
 
 .subheading {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Verdana', sans-serif;
+    font-weight: 900;
     font-size: 30px;
-    padding-left: 8%;
+    padding-left: 2.5em;
     padding-top: 1%;
-    font-weight: 700;
     padding-bottom: 2%;
 }
 
@@ -134,7 +145,7 @@ nav {
 }
 
 .content {
-    font-family: 'Raleway';
+    font-family: 'Raleway', 'Verdana', sans-serif;
     font-size: 24px;
     padding-left: 10%;
     padding-top: 1%;
@@ -161,48 +172,41 @@ nav {
 
 footer {
     background-color: #393939;
+    padding: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
-.footer-home {
-    font-family: 'Poppins';
-    font-size: 16px;
-    padding-left: 10%;
-    padding-top: 1%;
+.footer-container {
+    font-size: 30px;
+    padding-left: 2.5em;
+}
+
+.footer-links-1 {
+    font-family: 'Poppins', 'Verdana', sans-serif;
+    font-size: 0.6666666666666667em;
+    margin-top: 1em;
     font-weight: 400;
+    font-style: italic;
     color: white;
+}
+
+.footer-links-2 {
+    font-family: 'Poppins', 'Verdana', sans-serif;
+    font-size: 0.6666666666666667em;
+    margin-top: 1em;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+
+#footer-links-grp1 {
     width: 250px;
-    padding-top: 2.5%;
 }
 
-.footer-about {
-    font-family: 'Poppins';
-    font-size: 16px;
-    padding-left: 10%;
-    padding-top: 1%;
-    font-weight: 400;
-    color: white;
-    width: 250px;
-}
-
-.footer-contact {
-    font-family: 'Poppins';
-    font-size: 16px;
-    padding-left: 10%;
-    padding-top: 1%;
-    font-weight: 400;
-    color: white;
-    width: 250px;
-}
-
-.footer-address {
-    font-family: 'Poppins';
-    font-size: 16px;
-    padding-left: 10%;
-    padding-top: 1%;
-    font-weight: 400;
-    color: white;
-    width: 270px;
-    padding-bottom: 2.5%;
+#footer-links-grp2 {
+    margin-top: 3em;
+    width: 380px;
 }
 
 main {
@@ -220,4 +224,10 @@ main {
     border-radius: 0px;
     width: 100px;
     height: 100px;
+}
+
+.categories {
+    /* margin-left: 1em;
+    margin-top: 1em; */
+    margin: 1em;
 }
