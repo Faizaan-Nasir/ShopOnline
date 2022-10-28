@@ -67,7 +67,7 @@ nav {
 .btn {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 5%;
+    padding-left: 5.5em;
     cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ nav {
 .logo-div {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 15%;
+    padding-left: 9.5%;
 }
 
 .search {
@@ -97,7 +97,7 @@ nav {
 .search-div {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 15%;
+    padding-left: 11%;
 }
 
 .call {
@@ -131,7 +131,7 @@ nav {
     font-family: 'Raleway', 'Verdana', sans-serif;
     font-weight: 900;
     font-size: 30px;
-    padding-left: 2.5em;
+    padding-left: 3em;
     padding-top: 0.5em;
     padding-bottom: 2%;
 }
@@ -182,7 +182,7 @@ footer {
 
 .footer-container {
     font-size: 30px;
-    padding-left: 2.5em;
+    padding-left: 3em;
 }
 
 .footer-links-1 {
@@ -236,37 +236,61 @@ main {
 }
 
 .slideshow-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
 
-/* trying slideshow #1 */
-.slideshow {
-    height: 30em;
-    width: 90%;
-    background-image: url('./src/sample1.png');
-    animation-name: slideshow;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.container {
+    width: 1240px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+
 }
 
-@keyframes slideshow {
+.wrapper {
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.slideimage {
+    width: 1240px;
+    height: 600px;
+    border-radius: 5px;
+}
+
+@keyframes slide {
     0% {
-        background-image: url('./src/sample1.png')
+        transform: translateX(0);
     }
 
-    33.33% {
-        background-image: url('./src/sample2.png')
+    25% {
+        transform: translateX(0);
     }
 
-    66.66% {
-        background-image: url('./src/sample3.png');
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
     }
 
     100% {
-        background-image: url('./src/sample1.png');
+        transform: translateX(-300%);
     }
 }
