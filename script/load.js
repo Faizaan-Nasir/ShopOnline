@@ -1,8 +1,24 @@
 const api_url = "https://sheetdb.io/api/v1/6lmkthf76fddi"
-
+let data
+let temp
+var t_date = new Date().toLocaleDateString("de-DE");
+var l_date = localStorage.date
+const check = String(localStorage.data)
+if (check == 'undefined' || l_date != t_date) {
+    getData()
+}
+else {
+    data = JSON.parse(localStorage.getItem("data") || "[]");
+    load()
+}
 async function getData() {
     const response = await fetch(api_url)
-    const data = await response.json()
+    temp = await response.json()
+    localStorage.setItem("data", JSON.stringify(temp));
+    data = JSON.parse(localStorage.getItem("data") || "[]");
+    load()
+}
+function load() {
     if (data.length >= 0) {
         const main = document.getElementById("main")
         const loader = document.getElementById("loader")
@@ -10,7 +26,7 @@ async function getData() {
         main.style.display = "block"
     }
     else {
-        alert("The sserver threw an error. Contact the store owner immediately.")
+        alert("The server threw an error. Contact the store owner immediately.")
     }
     var a = 0
     var b = 0
@@ -64,4 +80,5 @@ async function getData() {
             e = e + 1
         }
     }
+    localStorage.date = t_date
 }
