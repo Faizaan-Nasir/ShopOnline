@@ -293,7 +293,7 @@ main {
     }
 }
 
-.description {
+/* .description {
     display: none;
     width: 100px;
     height: 200px;
@@ -315,4 +315,4 @@ main {
 
 .store:hover+.description {
     display: block;
-}
+} */

@@ -76,9 +76,11 @@ function load() {
         div.style.marginBottom = "4%"
         if (data[k]['p_spc'] == "yes" && e < 5) {
             document.getElementById("Top-Picks").appendChild(div);
-            document.getElementById(`display${k}`).innerHTML = `<div class="store-container"><div class="store"><img src="${data[k]['p_img']}" class="spc-img"><h3>${data[k]['p_name']}</h3> </div><div class="description"><div class="des">${data[k]['p_description']}</div></div>`
+            document.getElementById(`display${k}`).innerHTML = `<div class="store-container"><div class="store"><img src="${data[k]['p_img']}" class="spc-img"><h3>${data[k]['p_name']}</h3> </div><div class="description"></div>`
             e = e + 1
         }
     }
     localStorage.date = t_date
 }
+
+// <div class="des">${data[k]['p_description']}</div>
