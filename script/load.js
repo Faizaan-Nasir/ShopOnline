@@ -40,17 +40,17 @@ function load() {
         div.style.marginTop = "1%"
         if (`${data[i]['p_cat']}` == "Fastners" && a < 5) {
             document.getElementById("Fastners").appendChild(div);
-            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
+            document.getElementById(`display${i}`).innerHTML = `<div class="store"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             a = a + 1
         }
         else if (`${data[i]['p_cat']}` == "Paints" && b < 5) {
             document.getElementById("Paints").appendChild(div);
-            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
+            document.getElementById(`display${i}`).innerHTML = `<div class="store"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             b = b + 1
         }
         else if (`${data[i]['p_cat']}` == "Electrical" && c < 5) {
             document.getElementById("Electrical").appendChild(div);
-            document.getElementById(`display${i}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
+            document.getElementById(`display${i}`).innerHTML = `<div class="store"><img src="${data[i]['p_img']}"><h3>${data[i]['p_name']}</h3> </div>`
             c = c + 1
         }
     }
@@ -63,7 +63,7 @@ function load() {
         div.style.marginBottom = "4%"
         if (d < 5) {
             document.getElementById("Latest").appendChild(div);
-            document.getElementById(`display${j}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[j]['p_img']}" class="latest-img"><h3>${data[j]['p_name']}</h3> </div>`
+            document.getElementById(`display${j}`).innerHTML = `<div class="store"><img src="${data[j]['p_img']}" class="latest-img"><h3>${data[j]['p_name']}</h3> </div>`
             d = d + 1
         }
     }
@@ -76,7 +76,7 @@ function load() {
         div.style.marginBottom = "4%"
         if (data[k]['p_spc'] == "yes" && e < 5) {
             document.getElementById("Top-Picks").appendChild(div);
-            document.getElementById(`display${k}`).innerHTML = `<div class="store" onhover="show()"><img src="${data[k]['p_img']}" class="spc-img"><h3>${data[k]['p_name']}</h3> </div>`
+            document.getElementById(`display${k}`).innerHTML = `<div class="store-container"><div class="store"><img src="${data[k]['p_img']}" class="spc-img"><h3>${data[k]['p_name']}</h3> </div><div class="description"><div class="des">${data[k]['p_description']}</div></div>`
             e = e + 1
         }
     }
