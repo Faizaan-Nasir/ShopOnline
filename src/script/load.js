@@ -71,7 +71,7 @@ function load() {
         div.classList.add("card");
         if (d < 5) {
             document.getElementById("Latest").appendChild(div);
-            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}" style="border-radius:45px"><h3>${data[j]["p_name"]}</h3> </div><div class="description add"><div class="des">${data[j]["p_description"]}<button id='${j}' class="atc">Add to cart</button></div></div>`;
+            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}" style="border-radius:45px"><h3>${data[j]["p_name"]}</h3> </div><div class="description add"><div class="des">${data[j]["p_description"]}<button id='${j}' onclick="click(${j})" class="atc">Add to cart</button></div></div>`;
             d = d + 1;
         }
     }
