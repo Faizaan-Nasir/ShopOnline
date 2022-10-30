@@ -59,7 +59,7 @@ function load() {
             c = c + 1;
         }
 
-        div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[i]["p_img"]}" ><h3>${data[i]["p_name"]}</h3> </div><div class="description"></div>`;
+        div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[i]["p_img"]}" ><h3>${data[i]["p_name"]}</h3> </div><div class="description box"></div>`;
     }
 
     let d = 0;
@@ -71,7 +71,7 @@ function load() {
         div.classList.add("card");
         if (d < 5) {
             document.getElementById("Latest").appendChild(div);
-            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}"><h3>${data[j]["p_name"]}</h3> </div><div class="description"></div>`;
+            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}"><h3>${data[j]["p_name"]}</h3> </div><div class="description box"></div>`;
             d = d + 1;
         }
     }

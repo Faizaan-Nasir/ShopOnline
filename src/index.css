@@ -314,6 +314,10 @@ main {
     transition: 0.5s ease-in-out;
 }
 
+.box {
+    border-radius: 21px;
+}
+
 .des {
     padding-top: 60%;
 }
