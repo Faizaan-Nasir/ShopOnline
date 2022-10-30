@@ -347,6 +347,8 @@ main {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: "Raleway", "Verdana", sans-serif;
+    margin-bottom: 2%;
 }
 
 .btn-del {
