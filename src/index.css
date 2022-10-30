@@ -303,7 +303,6 @@ main {
     height: 200px;
     text-align: center;
     justify-content: center;
-    padding: 0px;
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 100px;
@@ -319,9 +318,13 @@ main {
 }
 
 .des {
-    padding-top: 60%;
+    padding-top: 65%;
 }
 
-.store-container:hover > .description {
+.store-container:hover>.description {
     opacity: 100%;
+}
+
+.add {
+    border-radius: 45px;
 }

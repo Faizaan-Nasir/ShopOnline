@@ -59,7 +59,7 @@ function load() {
             c = c + 1;
         }
 
-        div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[i]["p_img"]}" ><h3>${data[i]["p_name"]}</h3> </div><div class="description box"></div>`;
+        div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[i]["p_img"]}" ><h3>${data[i]["p_name"]}</h3> </div><div class="description box"><div class="des">${data[i]["p_description"]}</div></div>`;
     }
 
     let d = 0;
@@ -71,7 +71,7 @@ function load() {
         div.classList.add("card");
         if (d < 5) {
             document.getElementById("Latest").appendChild(div);
-            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}"><h3>${data[j]["p_name"]}</h3> </div><div class="description box"></div>`;
+            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[j]["p_img"]}" style="border-radius:45px"><h3>${data[j]["p_name"]}</h3> </div><div class="description add"><div class="des">${data[j]["p_description"]}</div></div>`;
             d = d + 1;
         }
     }
@@ -85,7 +85,7 @@ function load() {
         div.classList.add("card");
         if (data[k]["p_spc"] == "yes" && e < 5) {
             document.getElementById("Top-Picks").appendChild(div);
-            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[k]["p_img"]}" class="spc-img"><h3>${data[k]["p_name"]}</h3> </div><div class="description"></div>`;
+            div.innerHTML = `<div class="store-container"><div class="store"><img src="${data[k]["p_img"]}" class="spc-img"><h3>${data[k]["p_name"]}</h3> </div><div class="description"><div class="des">${data[k]["p_description"]}</div></div>`;
             e = e + 1;
         }
     }
