@@ -296,8 +296,9 @@ main {
     }
 }
 
-/* .description {
-    display: none;
+.description {
+    display: block;
+    opacity: 0;
     width: 100px;
     height: 200px;
     text-align: center;
@@ -306,16 +307,17 @@ main {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 100px;
-    background-color: #CECED7;
+    background-color: #ceced7;
     margin-left: -200px;
     font-size: 16px;
-    font-family: 'Raleway', 'Verdana', sans-serif;
+    font-family: "Raleway", "Verdana", sans-serif;
+    transition: 0.5s ease-in-out;
 }
 
 .des {
     padding-top: 60%;
 }
 
-.store:hover+.description {
-    display: block;
-} */
+.store-container:hover > .description {
+    opacity: 100%;
+}
