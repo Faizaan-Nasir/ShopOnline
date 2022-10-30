@@ -1,134 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
-            rel="stylesheet"
-        />
-        <title>Home</title>
-        <link href="./index.css" rel="stylesheet" />
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-    </head>
 
-    <body>
-        <main id="main">
-            <!-- navbar starts here -->
-            <nav>
-                <div class="btn">Home</div>
-                <div class="btn">About</div>
-                <div class="btn">Product</div>
-                <div class="logo-div">
-                    <img src="./public/Signature 1.png" class="logo" />
-                </div>
-                <div class="search-div">
-                    <textarea
-                        id="search"
-                        cols="30"
-                        rows="1"
-                        class="search"
-                        placeholder="What are you looking for?"
-                    ></textarea>
-                </div>
-                <a class="icon-div" href="#contact"
-                    ><img src="./public/call.png" class="call"
-                /></a>
-                <div class="icon-div">
-                    <img src="./public/shop.png" class="shop" />
-                </div>
-            </nav>
-            <!-- navbar ends here -->
-            <div class="slideshow-container">
-                <div class="container">
-                    <!--Area of the images-->
-                    <div class="wrapper">
-                        <img class="slideimage" src="./public/sample1.png" />
-                        <img class="slideimage" src="./public/sample2.png" />
-                        <img class="slideimage" src="./public/sample3.png" />
-                        <img class="slideimage" src="./public/sample1.png" />
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet" />
+    <title>Home</title>
+    <link href="./index.css" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <!-- navbar starts here -->
+        <nav>
+            <div class="btn">Home</div>
+            <div class="btn">About</div>
+            <div class="btn">Product</div>
+            <div class="logo-div">
+                <img src="./public/Signature 1.png" class="logo" />
+            </div>
+            <div class="search-div">
+                <textarea id="search" cols="30" rows="1" class="search"
+                    placeholder="What are you looking for?"></textarea>
+            </div>
+            <a class="icon-div" href="#contact"><img src="./public/call.png" class="call" /></a>
+            <div class="icon-div">
+                <img src="./public/shop.png" class="shop" />
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+        <div class="slideshow-container">
+            <div class="container">
+                <!--Area of the images-->
+                <div class="wrapper">
+                    <img class="slideimage" src="./public/sample1.png" />
+                    <img class="slideimage" src="./public/sample2.png" />
+                    <img class="slideimage" src="./public/sample3.png" />
+                    <img class="slideimage" src="./public/sample1.png" />
                 </div>
             </div>
-
-            <!-- the br(s) above are to be removed in the future after slideshow has been added -->
-
-            <!-- top picks starts here -->
-            <div class="Top Picks">
-                <div class="subheading">Top Picks 🧨</div>
-                <div id="Top-Picks" class="display"></div>
-            </div>
-            <!-- top picks ends here -->
-
-            <!-- latest starts here -->
-            <div class="latest">
-                <div class="subheading">Latest 🎉</div>
-                <div id="Latest" class="display"></div>
-            </div>
-            <!-- latest ends here -->
-
-            <!-- all-products starts here -->
-            <div class="all-products">
-                <div class="subheading">All Products ⚒️</div>
-                <div class="categories">
-                    <h2>Fastners</h2>
-                    <div id="Fastners" class="display"></div>
-                    <h2>Paints</h2>
-                    <div id="Paints" class="display"></div>
-                    <h2>Electricals</h2>
-                    <div id="Electrical" class="display"></div>
-                </div>
-            </div>
-            <!-- all products ends here -->
-
-            <div class="contact" id="contact">
-                <div class="subheading" id="about-us-header">About Us ☎️</div>
-                <div class="about-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </div>
-                <div class="contact-img-container">
-                    <img src="./public/store-contact.png" class="contact-img" />
-                </div>
-            </div>
-            <footer>
-                <div class="footer-container">
-                    <div id="footer-links-grp1">
-                        <div class="footer-links-1">Home</div>
-                        <div class="footer-links-1">About</div>
-                    </div>
-                    <div id="footer-links-grp2">
-                        <div class="footer-links-2">+971 52 843 4311</div>
-                        <a href="https://goo.gl/maps/DSRK89GQXCTkbqw47">
-                            <div class="footer-links-2">
-                                46CG+3C4 - 19 A St - Al Quoz - Al Quoz
-                                Industrial Area 4 - Dubai
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </footer>
-        </main>
-        <div id="loader">
-            <img src="./public/Loading_icon.gif" class="loader" />
         </div>
-    </body>
-    <script src="./script/load.js"></script>
+
+        <!-- the br(s) above are to be removed in the future after slideshow has been added -->
+
+        <!-- top picks starts here -->
+        <div class="Top Picks">
+            <div class="subheading">Top Picks 🧨</div>
+            <div id="Top-Picks" class="display"></div>
+        </div>
+        <!-- top picks ends here -->
+
+        <!-- latest starts here -->
+        <div class="latest">
+            <div class="subheading">Latest 🎉</div>
+            <div id="Latest" class="display"></div>
+        </div>
+        <!-- latest ends here -->
+
+        <!-- all-products starts here -->
+        <div class="all-products">
+            <div class="subheading">All Products ⚒️</div>
+            <div class="categories">
+                <h2>Fastners</h2>
+                <div id="Fastners" class="display"></div>
+                <h2>Paints</h2>
+                <div id="Paints" class="display"></div>
+                <h2>Electricals</h2>
+                <div id="Electrical" class="display"></div>
+            </div>
+        </div>
+        <!-- all products ends here -->
+
+        <div class="contact" id="contact">
+            <div class="subheading" id="about-us-header">About Us ☎️</div>
+            <div class="about-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </div>
+            <div class="contact-img-container">
+                <img src="./public/store-contact.png" class="contact-img" />
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div id="footer-links-grp1">
+                    <div class="footer-links-1">Home</div>
+                    <div class="footer-links-1">About</div>
+                </div>
+                <div id="footer-links-grp2">
+                    <div class="footer-links-2">+971 52 843 4311</div>
+                    <a href="https://goo.gl/maps/DSRK89GQXCTkbqw47">
+                        <div class="footer-links-2">
+                            46CG+3C4 - 19 A St - Al Quoz - Al Quoz
+                            Industrial Area 4 - Dubai
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="loader">
+        <img src="./public/Loading_icon.gif" class="loader" />
+    </div>
+</body>
+<script src="./script/load.js"></script>
+<script>
+    // function click(a) {
+    //     alert(a)
+    // }
+</script>
+
 </html>

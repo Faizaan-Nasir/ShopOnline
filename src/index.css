@@ -306,7 +306,7 @@ main {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 100px;
-    background-color: #ceced7;
+    background-color: #bbbbc5;
     margin-left: -200px;
     font-size: 16px;
     font-family: "Raleway", "Verdana", sans-serif;
@@ -318,7 +318,7 @@ main {
 }
 
 .des {
-    padding-top: 65%;
+    padding-top: 55%;
 }
 
 .store-container:hover>.description {
@@ -327,4 +327,17 @@ main {
 
 .add {
     border-radius: 45px;
+}
+
+.atc {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.1px solid black;
+    margin-top: 3px;
+}
+
+.atc:hover {
+    background-color: #e3e3eb;
+    cursor: pointer;
 }
