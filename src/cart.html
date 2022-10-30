@@ -10,9 +10,42 @@
 </head>
 
 <body>
+    <nav>
+        <a href="./index.html" style="text-decoration:none; color: black;" class="btn">Home</a>
+        <div class="btn">About</div>
+        <a href="./index.html#contact" style="text-decoration:none; color: black;" class="btn">Product</a>
+        <div class="logo-div">
+            <img src="./public/Signature 1.png" class="logo" />
+        </div>
+        <div class="search-div">
+            <textarea id="search" cols="30" rows="1" class="search" placeholder="What are you looking for?"></textarea>
+        </div>
+        <a class="icon-div" href="#contact"><img src="./public/call.png" class="call" /></a>
+        <a href="./cart.html" class="icon-div">
+            <img src="./public/shop.png" class="shop" />
+        </a>
+    </nav>
+
     <h1 class="subheading">Shopping Cart:</h1>
     <div id="display-cart"></div>
     <div class="btn-container"><button onclick="eraseCart()" class="btn-del">Delete all Items</button></div>
+    <footer>
+        <div class="footer-container">
+            <div id="footer-links-grp1">
+                <div class="footer-links-1">Home</div>
+                <div class="footer-links-1">About</div>
+            </div>
+            <div id="footer-links-grp2">
+                <div class="footer-links-2">+971 52 843 4311</div>
+                <a href="https://goo.gl/maps/DSRK89GQXCTkbqw47">
+                    <div class="footer-links-2">
+                        46CG+3C4 - 19 A St - Al Quoz - Al Quoz
+                        Industrial Area 4 - Dubai
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./script/cart.js"></script>
 <script>
