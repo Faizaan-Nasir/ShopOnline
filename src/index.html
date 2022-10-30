@@ -20,7 +20,7 @@
     </style>
 </head>
 
-<body>
+<body onload="initial()">
     <main id="main">
         <!-- navbar starts here -->
         <nav>
@@ -35,9 +35,9 @@
                     placeholder="What are you looking for?"></textarea>
             </div>
             <a class="icon-div" href="#contact"><img src="./public/call.png" class="call" /></a>
-            <div class="icon-div">
+            <a href="./cart.html" class="icon-div">
                 <img src="./public/shop.png" class="shop" />
-            </div>
+            </a>
         </nav>
         <!-- navbar ends here -->
         <div class="slideshow-container">
@@ -122,8 +122,13 @@
 </body>
 <script src="./script/load.js"></script>
 <script>
-    function click(clicked_id) {
-        alert(clicked_id)
+    function hit(id) {
+        localStorage.favourite = `${localStorage.favourite}, {"p_id":"${id}"}`
+    }
+    function initial() {
+        if (localStorage.favourite == "undefined") {
+            localStorage.favourite = '{}'
+        }
     }
 </script>
 

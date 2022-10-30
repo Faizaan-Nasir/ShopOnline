@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1 class="subheading">Shopping Cart:</h1>
+    <div id="display-cart"></div>
+    <div class="btn-container"><button onclick="eraseCart()" class="btn-del">Delete all Items</button></div>
+</body>
+<script src="./script/cart.js"></script>
+<script>
+    function eraseCart() {
+        localStorage.favourite = "{}"
+        window.location.href = "./cart.html"
+    }
+</script>
+
+</html>

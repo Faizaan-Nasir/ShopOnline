@@ -341,3 +341,25 @@ main {
     background-color: #e3e3eb;
     cursor: pointer;
 }
+
+#display-cart {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-del {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btn-del:hover {
+    background-color: #e3e3eb;
+}
+
+.btn-container {
+    text-align: center;
+    margin-bottom: 10%;
+}
