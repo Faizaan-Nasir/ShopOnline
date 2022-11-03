@@ -9,8 +9,7 @@ async function submitData(url) {
         .then((jsonRes) => {
             // Checking if the request was successful
             if (jsonRes.status == "201") {
-                document.getElementById("verified").innerHTML =
-                    "Data Submitted Successfully";
+                document.getElementById("verified").innerHTML = "Data Submitted Successfully";
             }
         });
 }

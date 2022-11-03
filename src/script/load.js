@@ -36,7 +36,7 @@ function load() {
             "The server threw an error. Contact the store owner immediately."
         );
     }
-
+    // these are declared to ensure that only 5 products of each categories are displayed 
     let a = 0;
     let b = 0;
     let c = 0;
