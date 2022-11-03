@@ -288,11 +288,11 @@ main {
     }
 
     80% {
-        transform: translateX(-300%);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-300%);
+        transform: translateX(0);
     }
 }
 
