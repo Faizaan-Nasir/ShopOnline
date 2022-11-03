@@ -1,11 +1,11 @@
 const api_url = "https://sheetdb.io/api/v1/6lmkthf76fddi";
 
-// <please fill in what this block does>
+// getting today's date and date stored on last visit
 var t_date = new Date().toLocaleDateString("de-DE");
 var l_date = localStorage.date;
 const check = String(localStorage.data);
 
-// Checking for data in cache (LS)
+// Checking for data in cache (LS) and cheecking whether the user is visiting on the same day or some other
 if (check == "undefined" || l_date != t_date) {
     getData();
 } else {
@@ -21,15 +21,16 @@ async function getData() {
     load();
 }
 
-// Uses the data and does hydrates the page
+// Uses the data and hydrates the page
 function load() {
     let data = JSON.parse(localStorage.getItem("data") || "[]");
 
-    if (data.length >= 0) {
+    if (data.length > 0) {
         const main = document.getElementById("main");
         const loader = document.getElementById("loader");
         loader.style.display = "none";
         main.style.display = "block";
+        localStorage.date = t_date;
     } else {
         alert(
             "The server threw an error. Contact the store owner immediately."
@@ -90,6 +91,5 @@ function load() {
         }
     }
 
-    localStorage.date = t_date;
 }
 
