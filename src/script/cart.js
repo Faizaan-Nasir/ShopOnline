@@ -1,3 +1,6 @@
+if (localStorage.favourite == undefined) {
+    localStorage.favourite = "{}"
+}
 let fav = JSON.parse(`[${localStorage.favourite}]`)
 let data = JSON.parse(localStorage.getItem("data") || "[]");
 for (j = 1; j < fav.length; j++) {
