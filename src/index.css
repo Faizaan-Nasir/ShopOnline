@@ -365,3 +365,9 @@ main {
     text-align: center;
     margin-bottom: 7%;
 }
+
+#search-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

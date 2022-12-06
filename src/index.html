@@ -41,62 +41,67 @@
             </a>
         </nav>
         <!-- navbar ends here -->
-        <div class="slideshow-container">
-            <div class="container">
-                <!--Area of the images-->
-                <div class="wrapper">
-                    <img class="slideimage" src="./public/sample1.png" />
-                    <img class="slideimage" src="./public/sample2.png" />
-                    <img class="slideimage" src="./public/sample3.png" />
+        <div id="main-content">
+            <div class="slideshow-container">
+                <div class="container">
+                    <!--Area of the images-->
+                    <div class="wrapper">
+                        <img class="slideimage" src="./public/sample1.png" />
+                        <img class="slideimage" src="./public/sample2.png" />
+                        <img class="slideimage" src="./public/sample3.png" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- the br(s) above are to be removed in the future after slideshow has been added -->
+
+            <!-- top picks starts here -->
+            <div class="Top Picks">
+                <div class="subheading">Top Picks 🧨</div>
+                <div id="Top-Picks" class="display"></div>
+            </div>
+            <!-- top picks ends here -->
+
+            <!-- latest starts here -->
+            <div class="latest">
+                <div class="subheading">Latest 🎉</div>
+                <div id="Latest" class="display"></div>
+            </div>
+            <!-- latest ends here -->
+
+            <!-- all-products starts here -->
+            <div class="all-products" id="all-products">
+                <div class="subheading">All Products ⚒️</div>
+                <div class="categories">
+                    <h2>Fastners</h2>
+                    <div id="Fastners" class="display"></div>
+                    <h2>Paints</h2>
+                    <div id="Paints" class="display"></div>
+                    <h2>Electricals</h2>
+                    <div id="Electrical" class="display"></div>
+                </div>
+            </div>
+            <!-- all products ends here -->
+
+            <div class="contact" id="contact">
+                <div class="subheading" id="about-us-header">About Us ☎️</div>
+                <div class="about-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </div>
+                <div class="contact-img-container">
+                    <img src="./public/store-contact.png" class="contact-img" />
                 </div>
             </div>
         </div>
+        <div id="search-display">
 
-        <!-- the br(s) above are to be removed in the future after slideshow has been added -->
-
-        <!-- top picks starts here -->
-        <div class="Top Picks">
-            <div class="subheading">Top Picks 🧨</div>
-            <div id="Top-Picks" class="display"></div>
-        </div>
-        <!-- top picks ends here -->
-
-        <!-- latest starts here -->
-        <div class="latest">
-            <div class="subheading">Latest 🎉</div>
-            <div id="Latest" class="display"></div>
-        </div>
-        <!-- latest ends here -->
-
-        <!-- all-products starts here -->
-        <div class="all-products" id="all-products">
-            <div class="subheading">All Products ⚒️</div>
-            <div class="categories">
-                <h2>Fastners</h2>
-                <div id="Fastners" class="display"></div>
-                <h2>Paints</h2>
-                <div id="Paints" class="display"></div>
-                <h2>Electricals</h2>
-                <div id="Electrical" class="display"></div>
-            </div>
-        </div>
-        <!-- all products ends here -->
-
-        <div class="contact" id="contact">
-            <div class="subheading" id="about-us-header">About Us ☎️</div>
-            <div class="about-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </div>
-            <div class="contact-img-container">
-                <img src="./public/store-contact.png" class="contact-img" />
-            </div>
         </div>
         <footer>
             <div class="footer-container">
@@ -121,6 +126,7 @@
     </div>
 </body>
 <script src="./script/load.js"></script>
+<script src="./script/search.js"></script>
 <script>
     function hit(id) {
         localStorage.favourite = `${localStorage.favourite}, {"p_id":"${id}"}`
