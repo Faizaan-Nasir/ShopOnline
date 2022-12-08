@@ -16,5 +16,5 @@ for (j = 1; j < fav.length; j++) {
 }
 
 if (localStorage.favourite == "{}") {
-    document.getElementById("display-cart").innerHTML = "Nothing to show here, whatever you add to your cart will be shown here"
+    document.getElementById("display-cart").innerHTML = "Nothing to show here, whatever you add to your cart will be shown here!"
 }

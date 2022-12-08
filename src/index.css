@@ -239,16 +239,17 @@ main {
 
 .slideshow-container {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
+    border-radius: 0px;
 }
 
 .container {
-    width: 1240px;
+    width: 1320px;
     height: 600px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .wrapper {
@@ -257,9 +258,10 @@ main {
 }
 
 .slideimage {
-    width: 1240px;
+    margin-top: 2%;
+    width: 1320px;
     height: 600px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 @keyframes slide {
