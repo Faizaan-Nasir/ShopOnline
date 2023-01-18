@@ -247,7 +247,7 @@ main {
 
 .container {
     width: 1320px;
-    height: 600px;
+    height: 650px;
     overflow: hidden;
     border-radius: 0px;
 }
@@ -260,7 +260,7 @@ main {
 .slideimage {
     margin-top: 2%;
     width: 1320px;
-    height: 600px;
+    height: 650px;
     border-radius: 0px;
 }
 
