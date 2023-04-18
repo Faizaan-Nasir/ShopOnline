@@ -1,5 +1,5 @@
 var form = document.getElementById("sheetdb-form");
-
+const url = "https://sheetdb.io/api/v1/6lmkthf76fddi"
 async function submitData(url) {
     fetch(url, {
         method: "POST",
